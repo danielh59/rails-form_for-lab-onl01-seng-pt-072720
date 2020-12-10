@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
-	def index
-		@posts = Post.all
+
+  def index
+		@students = Post.all
 	end
 
 	def show
