@@ -18,18 +18,18 @@ class SchoolClasses < ApplicationController
 	end
 
 	def update
-	  @post = Post.find(params[:id])
-    @post.update(post_params(:title))
-	  redirect_to post_path(@post)
+	  @school_class = Post.find(params[:id])
+    @school_class.update(school_class_params(:title))
+	  redirect_to school_class_path(@school_class)
 	end
 
 	def edit
-	  @post = Post.find(params[:id])
+	  @school_class = Post.find(params[:id])
 	end
 
   private
 
- def post_params(*args)
-   params.require(:post).permit(*args)
+ def school_class_params(*args)
+   params.require(:school_class).permit(*args)
  end
 end
