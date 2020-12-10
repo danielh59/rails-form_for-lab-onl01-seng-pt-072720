@@ -1,6 +1,6 @@
 class SchoolClasses < ApplicationController
 	def index
-		@posts = Post.all
+		@school_classes = Post.all
 	end
 
 	def show
