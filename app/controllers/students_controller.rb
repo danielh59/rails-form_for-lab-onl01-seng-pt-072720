@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+class StudentssController < ApplicationController
 	def index
 		@posts = Post.all
 	end
