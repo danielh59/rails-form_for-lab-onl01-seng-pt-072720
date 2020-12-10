@@ -1,10 +1,10 @@
 class SchoolClass  < ActiveRecord::Migration
   def change
-    create_table :school_classes do |t|
-      t.string :first_name
-      t.string :last_name
+    create_table :school_classes do |s|
+      s.string :title
+      s.integer :room_number
 
-      t.timestamps null: false
+      s.timestamps null: false
     end
   end
 end
